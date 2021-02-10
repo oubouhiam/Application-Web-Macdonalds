@@ -39,20 +39,8 @@ axios.get('http://localhost:8080/sousCategory')
         </div>
 
       </div> ` 
-        
-
-
-      
+              
     }
-
-   
-
-
-    
-
-    
-  
-   
     
 }).catch(function (err) {
     console.log(err);

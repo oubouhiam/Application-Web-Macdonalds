@@ -9,6 +9,7 @@
 		const titlEl = document.querySelector('.titl');
 		const pagenameEl = document.querySelector('.pagename');
 		const paraEl = document.querySelector('.para');
+		const btnmenuEl = document.querySelector('.btnmenu') 
 		
 
 
@@ -27,6 +28,7 @@
 				titlEl.textContent = data[attr].titl;
 				pagenameEl.textContent = data[attr].pagename;
 				paraEl.textContent = data[attr].para;
+				btnmenuEl.textContent = data[attr].btnmenu;
 			});
 		});
 		
@@ -40,7 +42,8 @@
 				"Panier":"Panier",
 				"titl":"Welcome To Snack",
 				"pagename":"Délice",
-				"para":"Our Key Features"
+				"para":"Our Key Features",
+				"btnmenu":"View Menu"
 			  },
 			  "Arabic": 
 			  {
@@ -51,6 +54,7 @@
 				"Panier":"سلة",
 				"titl":"مرحبا بكم في سناك",
 				"pagename":"بهجة",
-				"para":"الميزات الرئيسية لدينا"
+				"para":"الميزات الرئيسية لدينا",
+				"btnmenu":" القائمة"
 			  }
 			}
