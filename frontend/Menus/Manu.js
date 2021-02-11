@@ -9,7 +9,9 @@
 		const titlEl = document.querySelector('.titl');
 		const pagenameEl = document.querySelector('.pagename');
 		const paraEl = document.querySelector('.para');
-		const btnmenuEl = document.querySelector('.btnmenu') 
+		const ourpdcEl = document.querySelector('.ourpdc');
+		const prdcatEl = document.querySelector('.prdcat');
+		const yrcarteEl = document.querySelector('.yrcarte');
 		
 
 
@@ -28,7 +30,10 @@
 				titlEl.textContent = data[attr].titl;
 				pagenameEl.textContent = data[attr].pagename;
 				paraEl.textContent = data[attr].para;
-				btnmenuEl.textContent = data[attr].btnmenu;
+				ourpdcEl.textContent = data[attr].ourpdc;
+				prdcatEl.textContent = data[attr].prdcat;
+				yrcarteEl.textContent = data [attr].yrcarte;
+
 			});
 		});
 		
@@ -36,25 +41,29 @@
 			  "english": 
 			  {
 			    "home": `Home`,
-			    "menu": "Menu",
-				"about": "About",
-				"contact":"Contact",
-				"Panier":"Panier",
-				"titl":"Welcome To Snack",
-				"pagename":"Délice",
-				"para":"Our Key Features",
-				"btnmenu":"View Menu"
+			    "menu": 'Menu',
+				"about": 'About',
+				"contact":'Contact',
+				"Panier":'Cart',
+				"titl":'Welcome To Snack',
+				"pagename":'Délice',
+				"para":'Our Key Features',
+				"ourpdc":'Our Product',
+				"prdcat":'Product Category',
+				"yrcarte": 'Your carte'
 			  },
 			  "Arabic": 
 			  {
 			    "home": `الصفحة الرئيسية`,
-			    "menu": "قائمة طعام",
-				"about": "حول",
-				"contact":"اتصل",
-				"Panier":"سلة",
-				"titl":"مرحبا بكم في سناك",
-				"pagename":"بهجة",
-				"para":"الميزات الرئيسية لدينا",
-				"btnmenu":" القائمة"
+			    "menu": 'قائمة طعام',
+				"about": 'حول',
+				"contact":'اتصل',
+				"Panier":'سلة',
+				"titl":'مرحبا بكم في سناك',
+				"pagename":'بهجة',
+				"para":'الميزات الرئيسية لدينا',
+				"ourpdc":'منتوجاتنا',
+				"prdcat":'أقسام المنتوجات',
+				"yrcarte" : 'سلة المشتريات'
 			  }
 			}

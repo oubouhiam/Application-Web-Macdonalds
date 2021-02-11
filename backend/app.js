@@ -31,8 +31,6 @@ mongoose.connect('mongodb://localhost:27017/SnackDelice' , {
 });
 
 
-
-
 // import router 
 
 const categoryRoute = require('./routes/categories');
@@ -45,42 +43,9 @@ app.use('/sousCategory' ,sousCategoryRoute);
 
 
 
-
-
-
-
-
-
-
-
-
-
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)

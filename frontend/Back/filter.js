@@ -14,7 +14,6 @@ axios.get('http://localhost:8080/categories')
         <a class="nav-link" href="sousCategory.html?id=${element._id}">${element.nom}</a>
       </li> 
         
-        
         `
         
     });
@@ -33,13 +32,17 @@ axios.get('http://localhost:8080/sousCategory')
         sctgContinner.innerHTML += `<div class="col-lg-3">
         <div class="D" style="margin-left: 28%;">
           <div class="circle mx-auto">
-            <img src="images/mcdo-460x460 (2).png" alt="">
+            <img src="images/mcdo-460x460 (2).png" alt=""style="
+            height: 199px;">
             <h4>${response.data[i].nom}</h4>
           </div>
         </div>
 
       </div> ` 
-              
+        
+
+
+      
     }
     
 }).catch(function (err) {

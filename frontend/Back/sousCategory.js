@@ -15,10 +15,11 @@ axios.get(`http://localhost:8080/sousCategory/${id}`)
         sctgItemContinner.innerHTML += `    <div class="col-lg-3">
         <div class="D" style="margin-left: 28%;">
           <div class="circle mx-auto">
-          <img src="images/mcdo-460x460 (2).png" alt="">
+          <img src="images/${element.picname}.png" alt="" style="
+          height: 199px;">
   
             <a href="product.html?id=${element._id}" style="    font-size: 20px;
-            margin-left: 17%;
+            margin-left: 32%;
             /* margin-top: -37%; */
             color: darkgreen;
             font-weight: bold;">${element.nom}</a>

@@ -50,21 +50,22 @@ let buttonDOM = [];
 class UI {
   displayProducts(products) {
     let results = "";
-    products.forEach(({ nom, prix, _id }) => {
-      results += `<!-- Single Product -->
-      <div class="product">
-      <div class="card">
-      <img class="card-img-top" src="https://cdn.pixabay.com/photo/2016/05/25/10/43/hamburger-1414422_960_720.jpg" alt="Card image cap">
+    products.forEach(({ nom, prix, _id,picname }) => {
+      results += `
+      <!-- Single Product -->
+      <div class="product" style="align-items: center;">
+      <div class="card" style="align-items: center;">
+      <img class="card-img-top" src="images/${picname}.png" alt="Card image cap"style=" width: 37%;">
       <div class="card-body">
         <h5 class="card-title">${nom}</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
         <h5 class="card-title">${prix}DH</h5>
-        <button class="btn addToCart" data-id= ${_id} >Add to Cart</button>
+        <button class="btn btn-warning addToCart" data-id= ${_id} >Add to Cart</button>
       </div>
     </div>
     </div>
-      
+    <div class="blink" style="margin: 1%;"></div>
       `;
     });
 
@@ -117,7 +118,7 @@ class UI {
     itemTotals.innerText = itemTotal;
   }
 
-  addCartItem({ prix, nom, _id }) {
+  addCartItem({ prix, nom, _id,picname }) {
     const div = document.createElement("div");
     div.classList.add("cart__item");
 
@@ -125,8 +126,10 @@ class UI {
         
         
         <div class="product">
-        <div class="card">
-        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2016/05/25/10/43/hamburger-1414422_960_720.jpg" alt="Card image cap">
+        <div class="card" style="width: 30%; align-items: center;">
+        <img class="card-img-top" src="images/${picname}.png" alt="Card image cap" style="
+        width: 37%;
+    ">
         <div class="card-body">
           <h5 class="card-title">${nom}</h5>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
