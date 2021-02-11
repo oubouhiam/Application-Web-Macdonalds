@@ -11,12 +11,6 @@ router.get('/', (req, res) => {
       .catch((err) => res.status(400).json("Error :" + err));
   });
 
-
-
-
-
-
-
   // add reservation
 
 router.route("/add").post((req, res) => {

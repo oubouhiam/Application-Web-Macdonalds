@@ -15,6 +15,5 @@ const Category = new Schema(
     versionKey: false
 }
 );
-
 const CategoryList = mongoose.model("Category", Category);
 module.exports = CategoryList;
