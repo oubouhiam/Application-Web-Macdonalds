@@ -7,12 +7,12 @@ console.log(id)
 
 
 axios.get(`http://localhost:8080/sousCategory/${id}`)
-.then(function (response) {
+    .then(function(response) {
 
 
-    
-    response.data.forEach(element => {
-        sctgItemContinner.innerHTML += `    <div class="col-lg-3">
+
+        response.data.forEach(element => {
+            sctgItemContinner.innerHTML += `    <div class="col-lg-3">
         <div class="D" style="margin-left: 28%;">
           <div class="circle mx-auto">
           <img src="images/${element.picname}.png" alt="" style="
@@ -28,11 +28,11 @@ axios.get(`http://localhost:8080/sousCategory/${id}`)
     
       </div>`
 
-    
-    });
 
-   
-    
-}).catch(function (err) {
-    console.log(err);
-});
+        });
+
+
+
+    }).catch(function(err) {
+        console.log(err);
+    });

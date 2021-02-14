@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="ticket.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+
+    <div class="container" style="margin-top: 113px;">
+        <div class="card" >
+            <div class="card-header">
+                Ticket
+                <strong id="date">01/01/2018</strong>
+            </div>
+            <div class="card-body" >
+                <div class="row mb-4" style="display: contents;padding: 18px;">
+                    <div style="margin-bottom: 10px;">Adress: 31 Agadir</div>
+                    <div style="margin-bottom: 10px;">Email: Macdonald's@macdo.com</div>
+                    <div style="margin-bottom: 10px;">Phone: 05-28-22-22-22</div>
+                </div>
+
+            </div>
+
+            <div class="table-responsive-sm">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Plat name</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabFacture">
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-5">
+
+                </div>
+
+                <div class="col-lg-4 col-sm-5 ml-auto">
+                    <table class="table table-clear">
+                        <tbody>
+                            <tr style="border: #0000004d 1px solid;background: #ffc107;">
+                                <td class="left">
+                                    <strong>Total</strong>
+                                </td>
+                                <td class="right">
+                                    <strong id="total"> DH</strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <input type="submit" class="btn btn-warning" id="pay" value="Download Invoice" onclick="window.print();">
+                    <button  class="btn btn-warning"><a style="color: black; float: right;" href="index.html"> Back to Home page</a></button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <script src="Back/invoice.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+
+</body>
+
+</html>

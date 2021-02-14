@@ -45,6 +45,10 @@ a {
 
 .row.m0 {
   margin: 0px; }
+  .bodyback{
+    background-image: url(/frontend/img/body\ back.jpg);
+    position: relative;
+  }
 
 body {
   line-height: 28px;
