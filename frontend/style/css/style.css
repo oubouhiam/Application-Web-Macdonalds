@@ -46,7 +46,7 @@ a {
 .row.m0 {
   margin: 0px; }
   .bodyback{
-    background-image: url(/frontend/img/body\ back.jpg);
+    background-image: url(../../img/bodyback.jpg);
     position: relative;
   }
 

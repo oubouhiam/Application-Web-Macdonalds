@@ -1,0 +1,5 @@
+.bodyback{
+    background-image: url(/frontend/img/bodyback.jpg);
+    position: relative;
+    background-size: cover;
+}
