@@ -58,7 +58,7 @@ class UI {
         }) => {
             results += `
       <!-- Single Product -->
-      <div class="product" style="align-items: center;">
+      <div class="product" style="align-items: center;display: contents;">
       <div class="card" style="align-items: center;">
       <img class="card-img-top" src="images/${picname}.png" alt="Card image cap"style=" width: 37%;">
       <div class="card-body">
